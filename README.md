@@ -1,6 +1,6 @@
-# PantryPal – Recipe Information Extraction
+# PantryPal: Recipe Information Extraction
 
-CSC 4641 (Natural Language Processing), MSOE – Fall 2026
+CSC 4641 (Natural Language Processing), MSOE, Fall 2026
 Team: Venkata Reddy Karri, Kazuya Rexer
 
 Extract structured information (quantity, unit, food, preparation, ...) from free-text recipe
