@@ -1,0 +1,104 @@
+{
+  "id": "recipenlg-146826",
+  "source": "RecipeNLG",
+  "origin": "Gathered",
+  "link": "www.cookbooks.com/Recipe-Details.aspx?id=98658",
+  "title": "Venison Pileau",
+  "raw_ingredients": [
+    "4 c. cooked venison (boneless)",
+    "1/4 lb. bacon, chopped in small pieces, fried",
+    "2 c. long-grain rice",
+    "3 cans (14 1/2 oz.) Swanson's clear beef broth",
+    "2 medium onions, chopped",
+    "2 oz. fresh mushrooms, chopped",
+    "* salt and pepper to taste"
+  ],
+  "ingredients": [
+    "4 c. cooked venison (boneless)",
+    "1/4 lb. bacon, chopped in small pieces, fried",
+    "2 c. long-grain rice",
+    "3 cans (14 1/2 oz.) Swanson's clear beef broth",
+    "2 medium onions, chopped",
+    "2 oz. fresh mushrooms, chopped",
+    "salt and pepper to taste"
+  ],
+  "tokens": [
+    [
+      "4",
+      "c",
+      ".",
+      "cooked",
+      "venison",
+      "(",
+      "boneless",
+      ")"
+    ],
+    [
+      "1/4",
+      "lb",
+      ".",
+      "bacon",
+      ",",
+      "chopped",
+      "in",
+      "small",
+      "pieces",
+      ",",
+      "fried"
+    ],
+    [
+      "2",
+      "c",
+      ".",
+      "long-grain",
+      "rice"
+    ],
+    [
+      "3",
+      "cans",
+      "(",
+      "14",
+      "1/2",
+      "oz",
+      ".",
+      ")",
+      "Swanson's",
+      "clear",
+      "beef",
+      "broth"
+    ],
+    [
+      "2",
+      "medium",
+      "onions",
+      ",",
+      "chopped"
+    ],
+    [
+      "2",
+      "oz",
+      ".",
+      "fresh",
+      "mushrooms",
+      ",",
+      "chopped"
+    ],
+    [
+      "salt",
+      "and",
+      "pepper",
+      "to",
+      "taste"
+    ]
+  ],
+  "ner_foods": [
+    "bacon",
+    "long-grain rice",
+    "beef broth",
+    "onions",
+    "fresh mushrooms",
+    "salt"
+  ],
+  "tags": null,
+  "label_type": "unlabeled"
+}

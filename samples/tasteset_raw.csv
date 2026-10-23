@@ -1,0 +1,9 @@
+ingredients,ingredients_entities
+"2 tubes cinnamon roll, refrigerated, with icing
+4 tablespoons butter, melted
+6 eggs
+½ cup milk
+2 teaspoons cinnamon
+2 teaspoons vanilla
+1 cup maple syrup
+","[{""span"": ""[(0, 1), ]"", ""type"": ""QUANTITY"", ""entity"": ""2""}, {""span"": ""[(2, 7), ]"", ""type"": ""UNIT"", ""entity"": ""tubes""}, {""span"": ""[(8, 21), (37, 41), (42, 47), ]"", ""type"": ""FOOD"", ""entity"": ""cinnamon roll with icing""}, {""span"": ""[(23, 35), ]"", ""type"": ""PROCESS"", ""entity"": ""refrigerated""}, {""span"": ""[(48, 49), ]"", ""type"": ""QUANTITY"", ""entity"": ""4""}, {""span"": ""[(50, 61), ]"", ""type"": ""UNIT"", ""entity"": ""tablespoons""}, {""span"": ""[(62, 68), ]"", ""type"": ""FOOD"", ""entity"": ""butter""}, {""span"": ""[(70, 76), ]"", ""type"": ""PROCESS"", ""entity"": ""melted""}, {""span"": ""[(77, 78), ]"", ""type"": ""QUANTITY"", ""entity"": ""6""}, {""span"": ""[(79, 83), ]"", ""type"": ""FOOD"", ""entity"": ""eggs""}, {""span"": ""[(84, 85), ]"", ""type"": ""QUANTITY"", ""entity"": ""½""}, {""span"": ""[(86, 89), ]"", ""type"": ""UNIT"", ""entity"": ""cup""}, {""span"": ""[(90, 94), ]"", ""type"": ""FOOD"", ""entity"": ""milk""}, {""span"": ""[(95, 96), ]"", ""type"": ""QUANTITY"", ""entity"": ""2""}, {""span"": ""[(97, 106), ]"", ""type"": ""UNIT"", ""entity"": ""teaspoons""}, {""span"": ""[(107, 115), ]"", ""type"": ""FOOD"", ""entity"": ""cinnamon""}, {""span"": ""[(116, 117), ]"", ""type"": ""QUANTITY"", ""entity"": ""2""}, {""span"": ""[(118, 127), ]"", ""type"": ""UNIT"", ""entity"": ""teaspoons""}, {""span"": ""[(128, 135), ]"", ""type"": ""FOOD"", ""entity"": ""vanilla""}, {""span"": ""[(136, 137), ]"", ""type"": ""QUANTITY"", ""entity"": ""1""}, {""span"": ""[(138, 141), ]"", ""type"": ""UNIT"", ""entity"": ""cup""}, {""span"": ""[(142, 153), ]"", ""type"": ""FOOD"", ""entity"": ""maple syrup""}]"

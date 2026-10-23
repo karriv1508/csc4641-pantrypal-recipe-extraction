@@ -1,0 +1,13 @@
+# Data is shared via OneDrive, not GitHub (size + licensing)
+*.csv
+*.jsonl
+data_processed/
+scraped_raw/
+RecipeNLG_dataset.csv/
+*.pdf
+data_clean_log.txt
+__pycache__/
+
+# small raw/processed examples are fine to include
+!samples/
+!samples/*
