@@ -11,3 +11,18 @@ __pycache__/
 # small raw/processed examples are fine to include
 !samples/
 !samples/*
+
+# Prototype: generated or large files
+.venv/
+corpus/
+logs/
+models/roberta/
+models/roberta_stage1/
+models/roberta-tasteset/
+models/distilbert-tasteset/
+*.zip
+# small files that are part of the submission (the rules above ignore *.jsonl and *.csv)
+!data/eval/*.jsonl
+!eval/*.jsonl
+!results/**/*.jsonl
+!results/*.csv

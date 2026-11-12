@@ -30,7 +30,8 @@ FRACTIONS = {"½": "1/2", "⅓": "1/3", "⅔": "2/3", "¼": "1/4", "¾": "3/4", 
 FRAC_CHARS = "".join(FRACTIONS)
 
 # numbers, fractions (1/2, 1½), words with internal - or ', or any single symbol
-TOKEN_RE = re.compile(rf"\d*[{FRAC_CHARS}]|\d+(?:[./]\d+)?|\w+(?:[-'’]\w+)*|[^\w\s]")
+# The fraction slash (U+2044) counts as "/" so "1⁄2" stays one token, as clean_line() makes it
+TOKEN_RE = re.compile(rf"\d*[{FRAC_CHARS}]|\d+(?:[./⁄]\d+)?|\w+(?:[-'’]\w+)*|[^\w\s]")
 
 
 def norm_token(tok: str) -> str:
@@ -39,7 +40,7 @@ def norm_token(tok: str) -> str:
     if m:
         whole, frac = m.groups()
         return f"{whole} {FRACTIONS[frac]}" if whole else FRACTIONS[frac]
-    return tok.replace("’", "'")
+    return tok.replace("’", "'").replace("⁄", "/")
 
 
 def tokenize(text):

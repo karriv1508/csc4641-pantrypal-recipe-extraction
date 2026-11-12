@@ -1,0 +1,1085 @@
+{
+ "sets": {
+  "tasteset-test": {
+   "lines": 824,
+   "lines_also_in_train": 224
+  },
+  "unseen": {
+   "lines": 600,
+   "lines_also_in_train": 0
+  },
+  "scraped": {
+   "lines": 151,
+   "lines_also_in_train": 25
+  }
+ },
+ "models": {
+  "rules": {
+   "tasteset-test": {
+    "p": 0.8111,
+    "r": 0.8259,
+    "f1": 0.8184,
+    "macro_f1": 0.4717,
+    "line_acc": 0.5704,
+    "field_acc": 0.7718,
+    "per_type": {
+     "FOOD": {
+      "p": 0.7659,
+      "r": 0.8236,
+      "f1": 0.7937,
+      "support": 890
+     },
+     "QUANTITY": {
+      "p": 0.8297,
+      "r": 0.9135,
+      "f1": 0.8696,
+      "support": 832
+     },
+     "UNIT": {
+      "p": 0.9465,
+      "r": 0.9711,
+      "f1": 0.9586,
+      "support": 692
+     },
+     "PROCESS": {
+      "p": 0.6167,
+      "r": 0.7629,
+      "f1": 0.682,
+      "support": 194
+     },
+     "PHYSICAL_QUALITY": {
+      "p": 0.6742,
+      "r": 0.3429,
+      "f1": 0.4545,
+      "support": 175
+     },
+     "COLOR": {
+      "p": 0.7241,
+      "r": 0.8936,
+      "f1": 0.8,
+      "support": 47
+     },
+     "TASTE": {
+      "p": 0.6111,
+      "r": 0.5,
+      "f1": 0.55,
+      "support": 22
+     },
+     "PURPOSE": {
+      "p": 0.6154,
+      "r": 0.5,
+      "f1": 0.5517,
+      "support": 16
+     },
+     "PART": {
+      "p": 0.0,
+      "r": 0.0,
+      "f1": 0.0,
+      "support": 11
+     },
+     "TRADE_NAME": {
+      "p": 0.0,
+      "r": 0.0,
+      "f1": 0.0,
+      "support": 46
+     },
+     "DIET": {
+      "p": 0.0,
+      "r": 0.0,
+      "f1": 0.0,
+      "support": 15
+     },
+     "EXAMPLE": {
+      "p": 0.0,
+      "r": 0.0,
+      "f1": 0.0,
+      "support": 7
+     }
+    },
+    "by_phenomenon": {
+     "alternative (or)": {
+      "lines": 64,
+      "field_acc": 0.7812
+     },
+     "long / chatty (>10 words)": {
+      "lines": 42,
+      "field_acc": 0.6429
+     },
+     "no quantity": {
+      "lines": 108,
+      "field_acc": 0.8704
+     },
+     "package size": {
+      "lines": 19,
+      "field_acc": 0.5789
+     },
+     "parenthetical note": {
+      "lines": 216,
+      "field_acc": 0.7731
+     },
+     "plain": {
+      "lines": 479,
+      "field_acc": 0.7495
+     },
+     "range": {
+      "lines": 15,
+      "field_acc": 0.8
+     },
+     "vague amount": {
+      "lines": 8,
+      "field_acc": 0.875
+     }
+    },
+    "ms_per_line": 0.01
+   },
+   "unseen": {
+    "p": 0.7874,
+    "r": 0.8044,
+    "f1": 0.7958,
+    "macro_f1": 0.46,
+    "line_acc": 0.48,
+    "field_acc": 0.7367,
+    "per_type": {
+     "FOOD": {
+      "p": 0.732,
+      "r": 0.797,
+      "f1": 0.7631,
+      "support": 665
+     },
+     "QUANTITY": {
+      "p": 0.8087,
+      "r": 0.9027,
+      "f1": 0.8531,
+      "support": 637
+     },
+     "UNIT": {
+      "p": 0.9419,
+      "r": 0.9647,
+      "f1": 0.9532,
+      "support": 538
+     },
+     "PROCESS": {
+      "p": 0.6079,
+      "r": 0.7753,
+      "f1": 0.6815,
+      "support": 178
+     },
+     "PHYSICAL_QUALITY": {
+      "p": 0.6582,
+      "r": 0.3377,
+      "f1": 0.4464,
+      "support": 154
+     },
+     "COLOR": {
+      "p": 0.7115,
+      "r": 0.881,
+      "f1": 0.7872,
+      "support": 42
+     },
+     "TASTE": {
+      "p": 0.625,
+      "r": 0.5,
+      "f1": 0.5556,
+      "support": 20
+     },
+     "PURPOSE": {
+      "p": 0.5455,
+      "r": 0.4286,
+      "f1": 0.48,
+      "support": 14
+     },
+     "PART": {
+      "p": 0.0,
+      "r": 0.0,
+      "f1": 0.0,
+      "support": 9
+     },
+     "TRADE_NAME": {
+      "p": 0.0,
+      "r": 0.0,
+      "f1": 0.0,
+      "support": 46
+     },
+     "DIET": {
+      "p": 0.0,
+      "r": 0.0,
+      "f1": 0.0,
+      "support": 11
+     },
+     "EXAMPLE": {
+      "p": 0.0,
+      "r": 0.0,
+      "f1": 0.0,
+      "support": 7
+     }
+    },
+    "by_phenomenon": {
+     "alternative (or)": {
+      "lines": 64,
+      "field_acc": 0.7812
+     },
+     "long / chatty (>10 words)": {
+      "lines": 42,
+      "field_acc": 0.6429
+     },
+     "no quantity": {
+      "lines": 61,
+      "field_acc": 0.8525
+     },
+     "package size": {
+      "lines": 18,
+      "field_acc": 0.6111
+     },
+     "parenthetical note": {
+      "lines": 208,
+      "field_acc": 0.7788
+     },
+     "plain": {
+      "lines": 313,
+      "field_acc": 0.6869
+     },
+     "range": {
+      "lines": 15,
+      "field_acc": 0.8
+     },
+     "vague amount": {
+      "lines": 4,
+      "field_acc": 0.75
+     }
+    },
+    "ms_per_line": 0.02
+   },
+   "scraped": {
+    "p": 0.8539,
+    "r": 0.8524,
+    "f1": 0.8531,
+    "macro_f1": 0.5822,
+    "line_acc": 0.6424,
+    "field_acc": 0.7748,
+    "per_type": {
+     "FOOD": {
+      "p": 0.8154,
+      "r": 0.8833,
+      "f1": 0.848,
+      "support": 180
+     },
+     "QUANTITY": {
+      "p": 0.8679,
+      "r": 0.9388,
+      "f1": 0.902,
+      "support": 147
+     },
+     "UNIT": {
+      "p": 0.9453,
+      "r": 0.938,
+      "f1": 0.9416,
+      "support": 129
+     },
+     "PROCESS": {
+      "p": 0.7647,
+      "r": 0.7959,
+      "f1": 0.78,
+      "support": 49
+     },
+     "PHYSICAL_QUALITY": {
+      "p": 0.6,
+      "r": 0.2727,
+      "f1": 0.375,
+      "support": 22
+     },
+     "COLOR": {
+      "p": 0.8182,
+      "r": 1.0,
+      "f1": 0.9,
+      "support": 9
+     },
+     "TASTE": {
+      "p": 1.0,
+      "r": 0.6667,
+      "f1": 0.8,
+      "support": 6
+     },
+     "PURPOSE": {
+      "p": 0.9,
+      "r": 0.8182,
+      "f1": 0.8571,
+      "support": 11
+     },
+     "PART": {
+      "p": 0.0,
+      "r": 0.0,
+      "f1": 0.0,
+      "support": 4
+     },
+     "TRADE_NAME": {
+      "p": 0.0,
+      "r": 0.0,
+      "f1": 0.0,
+      "support": 10
+     },
+     "DIET": {
+      "p": 0.0,
+      "r": 0.0,
+      "f1": 0.0,
+      "support": 2
+     }
+    },
+    "by_phenomenon": {
+     "alternative (or)": {
+      "lines": 11,
+      "field_acc": 0.8182
+     },
+     "long / chatty (>10 words)": {
+      "lines": 14,
+      "field_acc": 0.7857
+     },
+     "no quantity": {
+      "lines": 23,
+      "field_acc": 0.8261
+     },
+     "package size": {
+      "lines": 5,
+      "field_acc": 0.6
+     },
+     "parenthetical note": {
+      "lines": 34,
+      "field_acc": 0.7941
+     },
+     "plain": {
+      "lines": 85,
+      "field_acc": 0.7765
+     },
+     "range": {
+      "lines": 7,
+      "field_acc": 1.0
+     },
+     "vague amount": {
+      "lines": 7,
+      "field_acc": 0.1429
+     }
+    },
+    "ms_per_line": 0.01
+   }
+  },
+  "crf": {
+   "tasteset-test": {
+    "p": 0.9337,
+    "r": 0.9277,
+    "f1": 0.9307,
+    "macro_f1": 0.7643,
+    "line_acc": 0.8095,
+    "field_acc": 0.9357,
+    "per_type": {
+     "FOOD": {
+      "p": 0.9085,
+      "r": 0.9034,
+      "f1": 0.9059,
+      "support": 890
+     },
+     "QUANTITY": {
+      "p": 0.988,
+      "r": 0.9892,
+      "f1": 0.9886,
+      "support": 832
+     },
+     "UNIT": {
+      "p": 0.9855,
+      "r": 0.9855,
+      "f1": 0.9855,
+      "support": 692
+     },
+     "PROCESS": {
+      "p": 0.8873,
+      "r": 0.933,
+      "f1": 0.9095,
+      "support": 194
+     },
+     "PHYSICAL_QUALITY": {
+      "p": 0.7965,
+      "r": 0.7829,
+      "f1": 0.7896,
+      "support": 175
+     },
+     "COLOR": {
+      "p": 0.9111,
+      "r": 0.8723,
+      "f1": 0.8913,
+      "support": 47
+     },
+     "TASTE": {
+      "p": 0.9091,
+      "r": 0.9091,
+      "f1": 0.9091,
+      "support": 22
+     },
+     "PURPOSE": {
+      "p": 0.8667,
+      "r": 0.8125,
+      "f1": 0.8387,
+      "support": 16
+     },
+     "PART": {
+      "p": 0.75,
+      "r": 0.8182,
+      "f1": 0.7826,
+      "support": 11
+     },
+     "TRADE_NAME": {
+      "p": 0.5517,
+      "r": 0.3478,
+      "f1": 0.4267,
+      "support": 46
+     },
+     "DIET": {
+      "p": 0.75,
+      "r": 0.4,
+      "f1": 0.5217,
+      "support": 15
+     },
+     "EXAMPLE": {
+      "p": 0.1818,
+      "r": 0.2857,
+      "f1": 0.2222,
+      "support": 7
+     }
+    },
+    "by_phenomenon": {
+     "alternative (or)": {
+      "lines": 64,
+      "field_acc": 0.9531
+     },
+     "long / chatty (>10 words)": {
+      "lines": 42,
+      "field_acc": 0.9524
+     },
+     "no quantity": {
+      "lines": 108,
+      "field_acc": 0.9259
+     },
+     "package size": {
+      "lines": 19,
+      "field_acc": 0.8421
+     },
+     "parenthetical note": {
+      "lines": 216,
+      "field_acc": 0.9352
+     },
+     "plain": {
+      "lines": 479,
+      "field_acc": 0.9311
+     },
+     "range": {
+      "lines": 15,
+      "field_acc": 1.0
+     },
+     "vague amount": {
+      "lines": 8,
+      "field_acc": 1.0
+     }
+    },
+    "ms_per_line": 0.32
+   },
+   "unseen": {
+    "p": 0.9179,
+    "r": 0.9104,
+    "f1": 0.9141,
+    "macro_f1": 0.7469,
+    "line_acc": 0.7467,
+    "field_acc": 0.9183,
+    "per_type": {
+     "FOOD": {
+      "p": 0.883,
+      "r": 0.8737,
+      "f1": 0.8783,
+      "support": 665
+     },
+     "QUANTITY": {
+      "p": 0.9843,
+      "r": 0.9859,
+      "f1": 0.9851,
+      "support": 637
+     },
+     "UNIT": {
+      "p": 0.9814,
+      "r": 0.9814,
+      "f1": 0.9814,
+      "support": 538
+     },
+     "PROCESS": {
+      "p": 0.8777,
+      "r": 0.927,
+      "f1": 0.9016,
+      "support": 178
+     },
+     "PHYSICAL_QUALITY": {
+      "p": 0.7748,
+      "r": 0.7597,
+      "f1": 0.7672,
+      "support": 154
+     },
+     "COLOR": {
+      "p": 0.9,
+      "r": 0.8571,
+      "f1": 0.878,
+      "support": 42
+     },
+     "TASTE": {
+      "p": 0.9,
+      "r": 0.9,
+      "f1": 0.9,
+      "support": 20
+     },
+     "PURPOSE": {
+      "p": 0.8462,
+      "r": 0.7857,
+      "f1": 0.8148,
+      "support": 14
+     },
+     "PART": {
+      "p": 0.7,
+      "r": 0.7778,
+      "f1": 0.7368,
+      "support": 9
+     },
+     "TRADE_NAME": {
+      "p": 0.5517,
+      "r": 0.3478,
+      "f1": 0.4267,
+      "support": 46
+     },
+     "DIET": {
+      "p": 0.6667,
+      "r": 0.3636,
+      "f1": 0.4706,
+      "support": 11
+     },
+     "EXAMPLE": {
+      "p": 0.1818,
+      "r": 0.2857,
+      "f1": 0.2222,
+      "support": 7
+     }
+    },
+    "by_phenomenon": {
+     "alternative (or)": {
+      "lines": 64,
+      "field_acc": 0.9531
+     },
+     "long / chatty (>10 words)": {
+      "lines": 42,
+      "field_acc": 0.9524
+     },
+     "no quantity": {
+      "lines": 61,
+      "field_acc": 0.9016
+     },
+     "package size": {
+      "lines": 18,
+      "field_acc": 0.8333
+     },
+     "parenthetical note": {
+      "lines": 208,
+      "field_acc": 0.9375
+     },
+     "plain": {
+      "lines": 313,
+      "field_acc": 0.8978
+     },
+     "range": {
+      "lines": 15,
+      "field_acc": 1.0
+     },
+     "vague amount": {
+      "lines": 4,
+      "field_acc": 1.0
+     }
+    },
+    "ms_per_line": 0.25
+   },
+   "scraped": {
+    "p": 0.8826,
+    "r": 0.819,
+    "f1": 0.8496,
+    "macro_f1": 0.7122,
+    "line_acc": 0.6821,
+    "field_acc": 0.8477,
+    "per_type": {
+     "FOOD": {
+      "p": 0.8256,
+      "r": 0.7889,
+      "f1": 0.8068,
+      "support": 180
+     },
+     "QUANTITY": {
+      "p": 0.9265,
+      "r": 0.8571,
+      "f1": 0.8905,
+      "support": 147
+     },
+     "UNIT": {
+      "p": 0.9912,
+      "r": 0.876,
+      "f1": 0.93,
+      "support": 129
+     },
+     "PROCESS": {
+      "p": 0.9167,
+      "r": 0.898,
+      "f1": 0.9072,
+      "support": 49
+     },
+     "PHYSICAL_QUALITY": {
+      "p": 0.6522,
+      "r": 0.6818,
+      "f1": 0.6667,
+      "support": 22
+     },
+     "COLOR": {
+      "p": 0.9,
+      "r": 1.0,
+      "f1": 0.9474,
+      "support": 9
+     },
+     "TASTE": {
+      "p": 1.0,
+      "r": 0.6667,
+      "f1": 0.8,
+      "support": 6
+     },
+     "PURPOSE": {
+      "p": 0.8,
+      "r": 0.7273,
+      "f1": 0.7619,
+      "support": 11
+     },
+     "PART": {
+      "p": 1.0,
+      "r": 0.75,
+      "f1": 0.8571,
+      "support": 4
+     },
+     "TRADE_NAME": {
+      "p": 0.4,
+      "r": 0.2,
+      "f1": 0.2667,
+      "support": 10
+     },
+     "DIET": {
+      "p": 0.0,
+      "r": 0.0,
+      "f1": 0.0,
+      "support": 2
+     },
+     "EXAMPLE": {
+      "p": 0.0,
+      "r": 0.0,
+      "f1": 0.0,
+      "support": 0
+     }
+    },
+    "by_phenomenon": {
+     "alternative (or)": {
+      "lines": 11,
+      "field_acc": 0.6364
+     },
+     "long / chatty (>10 words)": {
+      "lines": 14,
+      "field_acc": 0.6429
+     },
+     "no quantity": {
+      "lines": 23,
+      "field_acc": 0.6957
+     },
+     "package size": {
+      "lines": 5,
+      "field_acc": 0.4
+     },
+     "parenthetical note": {
+      "lines": 34,
+      "field_acc": 0.6765
+     },
+     "plain": {
+      "lines": 85,
+      "field_acc": 0.9765
+     },
+     "range": {
+      "lines": 7,
+      "field_acc": 0.8571
+     },
+     "vague amount": {
+      "lines": 7,
+      "field_acc": 0.0
+     }
+    },
+    "ms_per_line": 0.25
+   }
+  },
+  "roberta": {
+   "tasteset-test": {
+    "p": 0.9301,
+    "r": 0.9437,
+    "f1": 0.9368,
+    "macro_f1": 0.7688,
+    "line_acc": 0.8289,
+    "field_acc": 0.9345,
+    "per_type": {
+     "FOOD": {
+      "p": 0.9217,
+      "r": 0.9258,
+      "f1": 0.9238,
+      "support": 890
+     },
+     "QUANTITY": {
+      "p": 0.9881,
+      "r": 0.9952,
+      "f1": 0.9916,
+      "support": 832
+     },
+     "UNIT": {
+      "p": 0.9856,
+      "r": 0.9899,
+      "f1": 0.9877,
+      "support": 692
+     },
+     "PROCESS": {
+      "p": 0.8976,
+      "r": 0.9485,
+      "f1": 0.9223,
+      "support": 194
+     },
+     "PHYSICAL_QUALITY": {
+      "p": 0.7396,
+      "r": 0.8114,
+      "f1": 0.7738,
+      "support": 175
+     },
+     "COLOR": {
+      "p": 0.8889,
+      "r": 0.8511,
+      "f1": 0.8696,
+      "support": 47
+     },
+     "TASTE": {
+      "p": 0.8571,
+      "r": 0.8182,
+      "f1": 0.8372,
+      "support": 22
+     },
+     "PURPOSE": {
+      "p": 0.75,
+      "r": 0.9375,
+      "f1": 0.8333,
+      "support": 16
+     },
+     "PART": {
+      "p": 0.75,
+      "r": 0.8182,
+      "f1": 0.7826,
+      "support": 11
+     },
+     "TRADE_NAME": {
+      "p": 0.6829,
+      "r": 0.6087,
+      "f1": 0.6437,
+      "support": 46
+     },
+     "DIET": {
+      "p": 0.6667,
+      "r": 0.4,
+      "f1": 0.5,
+      "support": 15
+     },
+     "EXAMPLE": {
+      "p": 0.1111,
+      "r": 0.2857,
+      "f1": 0.16,
+      "support": 7
+     }
+    },
+    "by_phenomenon": {
+     "alternative (or)": {
+      "lines": 64,
+      "field_acc": 0.9375
+     },
+     "long / chatty (>10 words)": {
+      "lines": 42,
+      "field_acc": 0.9286
+     },
+     "no quantity": {
+      "lines": 108,
+      "field_acc": 0.9259
+     },
+     "package size": {
+      "lines": 19,
+      "field_acc": 0.7895
+     },
+     "parenthetical note": {
+      "lines": 216,
+      "field_acc": 0.9259
+     },
+     "plain": {
+      "lines": 479,
+      "field_acc": 0.9374
+     },
+     "range": {
+      "lines": 15,
+      "field_acc": 1.0
+     },
+     "vague amount": {
+      "lines": 8,
+      "field_acc": 1.0
+     }
+    },
+    "ms_per_line": 20.82
+   },
+   "unseen": {
+    "p": 0.9137,
+    "r": 0.9311,
+    "f1": 0.9223,
+    "macro_f1": 0.7512,
+    "line_acc": 0.775,
+    "field_acc": 0.9183,
+    "per_type": {
+     "FOOD": {
+      "p": 0.9012,
+      "r": 0.9053,
+      "f1": 0.9032,
+      "support": 665
+     },
+     "QUANTITY": {
+      "p": 0.9844,
+      "r": 0.9937,
+      "f1": 0.9891,
+      "support": 637
+     },
+     "UNIT": {
+      "p": 0.9815,
+      "r": 0.987,
+      "f1": 0.9842,
+      "support": 538
+     },
+     "PROCESS": {
+      "p": 0.8889,
+      "r": 0.9438,
+      "f1": 0.9155,
+      "support": 178
+     },
+     "PHYSICAL_QUALITY": {
+      "p": 0.7135,
+      "r": 0.7922,
+      "f1": 0.7508,
+      "support": 154
+     },
+     "COLOR": {
+      "p": 0.875,
+      "r": 0.8333,
+      "f1": 0.8537,
+      "support": 42
+     },
+     "TASTE": {
+      "p": 0.8421,
+      "r": 0.8,
+      "f1": 0.8205,
+      "support": 20
+     },
+     "PURPOSE": {
+      "p": 0.7222,
+      "r": 0.9286,
+      "f1": 0.8125,
+      "support": 14
+     },
+     "PART": {
+      "p": 0.7,
+      "r": 0.7778,
+      "f1": 0.7368,
+      "support": 9
+     },
+     "TRADE_NAME": {
+      "p": 0.6829,
+      "r": 0.6087,
+      "f1": 0.6437,
+      "support": 46
+     },
+     "DIET": {
+      "p": 0.5714,
+      "r": 0.3636,
+      "f1": 0.4444,
+      "support": 11
+     },
+     "EXAMPLE": {
+      "p": 0.1111,
+      "r": 0.2857,
+      "f1": 0.16,
+      "support": 7
+     }
+    },
+    "by_phenomenon": {
+     "alternative (or)": {
+      "lines": 64,
+      "field_acc": 0.9375
+     },
+     "long / chatty (>10 words)": {
+      "lines": 42,
+      "field_acc": 0.9286
+     },
+     "no quantity": {
+      "lines": 61,
+      "field_acc": 0.918
+     },
+     "package size": {
+      "lines": 18,
+      "field_acc": 0.7778
+     },
+     "parenthetical note": {
+      "lines": 208,
+      "field_acc": 0.9279
+     },
+     "plain": {
+      "lines": 313,
+      "field_acc": 0.9073
+     },
+     "range": {
+      "lines": 15,
+      "field_acc": 1.0
+     },
+     "vague amount": {
+      "lines": 4,
+      "field_acc": 1.0
+     }
+    },
+    "ms_per_line": 20.76
+   },
+   "scraped": {
+    "p": 0.8966,
+    "r": 0.8682,
+    "f1": 0.8821,
+    "macro_f1": 0.7492,
+    "line_acc": 0.7152,
+    "field_acc": 0.8808,
+    "per_type": {
+     "FOOD": {
+      "p": 0.9298,
+      "r": 0.8833,
+      "f1": 0.906,
+      "support": 180
+     },
+     "QUANTITY": {
+      "p": 0.8873,
+      "r": 0.8571,
+      "f1": 0.872,
+      "support": 147
+     },
+     "UNIT": {
+      "p": 0.937,
+      "r": 0.9225,
+      "f1": 0.9297,
+      "support": 129
+     },
+     "PROCESS": {
+      "p": 1.0,
+      "r": 0.9388,
+      "f1": 0.9684,
+      "support": 49
+     },
+     "PHYSICAL_QUALITY": {
+      "p": 0.7619,
+      "r": 0.7273,
+      "f1": 0.7442,
+      "support": 22
+     },
+     "COLOR": {
+      "p": 0.875,
+      "r": 0.7778,
+      "f1": 0.8235,
+      "support": 9
+     },
+     "TASTE": {
+      "p": 1.0,
+      "r": 0.6667,
+      "f1": 0.8,
+      "support": 6
+     },
+     "PURPOSE": {
+      "p": 0.6667,
+      "r": 0.9091,
+      "f1": 0.7692,
+      "support": 11
+     },
+     "PART": {
+      "p": 1.0,
+      "r": 0.75,
+      "f1": 0.8571,
+      "support": 4
+     },
+     "TRADE_NAME": {
+      "p": 1.0,
+      "r": 0.4,
+      "f1": 0.5714,
+      "support": 10
+     },
+     "DIET": {
+      "p": 0.0,
+      "r": 0.0,
+      "f1": 0.0,
+      "support": 2
+     },
+     "EXAMPLE": {
+      "p": 0.0,
+      "r": 0.0,
+      "f1": 0.0,
+      "support": 0
+     }
+    },
+    "by_phenomenon": {
+     "alternative (or)": {
+      "lines": 11,
+      "field_acc": 0.8182
+     },
+     "long / chatty (>10 words)": {
+      "lines": 14,
+      "field_acc": 0.8571
+     },
+     "no quantity": {
+      "lines": 23,
+      "field_acc": 0.8261
+     },
+     "package size": {
+      "lines": 5,
+      "field_acc": 0.6
+     },
+     "parenthetical note": {
+      "lines": 34,
+      "field_acc": 0.7647
+     },
+     "plain": {
+      "lines": 85,
+      "field_acc": 0.9647
+     },
+     "range": {
+      "lines": 7,
+      "field_acc": 1.0
+     },
+     "vague amount": {
+      "lines": 7,
+      "field_acc": 0.1429
+     }
+    },
+    "ms_per_line": 19.01
+   }
+  }
+ },
+ "bootstrap_f1_diff_roberta_minus_crf": {
+  "tasteset-test": [
+   -0.0017,
+   0.014
+  ],
+  "unseen": [
+   -0.0012,
+   0.0176
+  ],
+  "scraped": [
+   0.0086,
+   0.061
+  ]
+ }
+}

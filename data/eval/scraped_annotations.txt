@@ -1,0 +1,186 @@
+# Cross-site test set: 151 ingredient lines from 12 Pinch of Yum recipes drawn at random
+# (random.Random(4641).sample of the 120 scraped recipes). None of the scraped recipes are used
+# for training or tuning. Labeled in one pass with Claude (an AI assistant) using the 12-type
+# TASTEset scheme, before any model was run on them; not yet checked by a second annotator.
+# Format: {span text|TYPE}; unmarked text is O. Removing the markup must give the cleaned line.
+# Types: F=FOOD Q=QUANTITY U=UNIT P=PROCESS PQ=PHYSICAL_QUALITY C=COLOR T=TASTE PU=PURPOSE
+#        PA=PART TN=TRADE_NAME D=DIET E=EXAMPLE
+# Conventions follow the TASTEset majority: "to taste" is QUANTITY; "for serving" is PURPOSE;
+# large/small/medium are PHYSICAL_QUALITY; colors are COLOR ("brown|C sugar|F"); "ground" and
+# "thinly sliced" are PROCESS; package sizes are QUANTITY+UNIT+UNIT; vague measures (pinch, squeeze,
+# swish, sprinkle, bit) are UNIT; commentary and words like "optional" are O.
+
+## scraped-pinchofyum-0007
+{2|Q} {cups|U} {oats|F}
+{3|Q} {bananas|F}
+{2|Q} {eggs|F}
+{3/4|Q} {cup|U} {pitted|P} {whole|PQ} {dates|F}
+{1|Q} {teaspoon|U} {baking soda|F}
+{1/2|Q} {teaspoon|U} {baking powder|F}
+not necessary, but I usually toss in a {pinch|U} of {salt|F} and {cinnamon|F} if I have them around
+not necessary, but {chocolate chips|F} are 👌🏼
+
+## scraped-pinchofyum-0008
+{2|Q} {large|PQ} {sweet|T} {potatoes|F}, {cut into chunks|P}
+a {swish|U} of {olive oil|F}
+{1-2|Q} {teaspoons|U} {turmeric|F}
+{2|Q} {cloves|U} {garlic|F}, {minced|P}
+{2|Q} {cups|U} {vegetable broth|F}
+{1/4|Q} {cup|U} {lemon juice|F}
+{1/3|Q} {cup|U} {olive oil|F}
+{1|Q} {small|PQ} {clove|U} {garlic|F}
+{2|Q} {teaspoons|U} {agave|F}
+{1/4|Q} {cup|U} {parsley leaves|F}
+{1/4|Q} {teaspoon|U} {salt|F} (more {to taste|Q})
+{poached|P} or {scrambled|P} {eggs|F}
+{brown|C} {rice|F} or {quinoa|F}
+{arugula|F} or {spinach|F} or {greensss|F}
+{pistachios|F} or other {nuts|F} {for topping|PU}
+
+## scraped-pinchofyum-0022
+{1|Q} {avocado|F}
+{1/4|Q} {cup|U} {plain Greek yogurt|F}
+a {squeeze|U} of {lime juice|F} ({to taste|Q})
+a {pinch|U} of {garlic powder|F} ({to taste|Q})
+{1/4|Q} {teaspoon|U} {salt|F} (more {to taste|Q})
+
+## scraped-pinchofyum-0026
+{half|Q} an {English cucumber|F}, {thinly sliced|P} (about {1|Q} {cup|U})
+{half|Q} a {shallot|F}, {thinly sliced|P} (about {1/4|Q} {cup|U})
+{2-3|Q} {teaspoons|U} {olive oil|F}
+{1|Q} {lime|F}, {juiced|P} and {zested|P} (about {1|Q} {tablespoon|U} {juice|F}, {1|Q} {teaspoon|U} {zest|F})
+{salt|F} and {pepper|F} {to taste|Q}
+{2|Q} {peaches|F}, {pitted|P} and {sliced|P} (about {2|Q} {cups|U})
+{mint leaves|F} (about {2|Q} {packed|PQ} {tablespoons|U})
+{2-3|Q} {teaspoons|U} {honey|F} {to finish|PU} (I like {hot honey|F}! Or you can do regular {honey|F} with {red|C} {pepper flakes|F} {sprinkled on top|P}, too.)
+
+## scraped-pinchofyum-0073
+{1|Q} {lb.|U} {ground|P} {beef|F}
+{1|Q} {tablespoon|U} {avocado oil|F}
+{2|Q} {teaspoons|U} {cornstarch|F}
+{1/3|Q} {cup|U} {teriyaki sauce|F} (I used {Bachan's Original|TN} sauce)
+{1|Q} {clove|U} {garlic|F}, {grated|P}
+{1/3|Q} {cup|U} {peanut butter|F}
+{1/3|Q} {cup|U} {soy sauce|F}
+{1/4|Q} {cup|U} {warm|PQ} {water|F}
+{2|Q} {tablespoons|U} {rice vinegar|F}
+{2|Q} {tablespoons|U} {sesame oil|F}
+{1-2|Q} {tablespoons|U} {sugar|F}
+{1|Q} {tablespoon|U} {chili garlic sauce|F}
+{5|Q} {green|C} {onions|F}, {thinly sliced|P} ({green|PA} saved {for garnish|PU})
+{2-3|Q} {cups|U} {sliced|P} {stir-fry veggies|F} (I like {red|C} {bell pepper|F}, {spinach|F}, and {basil leaves|F})
+{6|Q}-{ounce|U} {package|U} {stir-fry egg noodles|F} (I use the {Wel-Pac|TN} {chow mein stir fry noodles|F})
+{Black|C} {pepper|F} {for serving|PU}
+
+## scraped-pinchofyum-0075
+{1 1/2|Q} {lbs.|U} {chicken|F} {breasts|PA}
+{5|Q} {cups|U} {chicken broth|F}
+{1|Q} {onion|F}, {minced|P}
+{2|Q} {cloves|U} {garlic|F}, {minced|P}
+{1|Q} {jalapeno|F}, {minced|P}
+{2|Q} {tablespoons|U} {butter|F} or {olive oil|F}
+{2|Q} {teaspoons|U} {chili powder|F}
+{1/2|Q} {teaspoon|U} {salt|F}
+{2|Q} {large|PQ} {sweet|T} {potatoes|F}, {peeled|P} and {diced|P} (about {4|Q} {cups|U})
+{2|Q} {14|Q} {ounce|U} {cans|U} {fire roasted|PQ} {tomatoes with garlic|F}, {undrained|P}
+{1|Q} {14|Q} {ounce|U} {can|U} {black|C} {beans|F}, {drained|P}
+{3|Q} {tablespoons|U} {ground|P} {flaxmeal|F}
+{cilantro|F} and {Cotija cheese|F} {for topping|PU}
+
+## scraped-pinchofyum-0084
+{3/4|Q} {cup|U} {uncooked|PQ} {wild rice|F}, {rinsed|P}
+{1|Q} {pound|U} {boneless|PQ}, {skinless|PQ} {chicken|F} {breasts|PA}
+{2|Q} {cups|U} {mirepoix|F} ({chopped|P} {celery|F}, {carrots|F}, and {onions|F})
+{2|Q} {cloves|U} {garlic|F}, {minced|P}
+{5|Q} {cups|U} {chicken broth|F}
+{1 1/2|Q} {teaspoons|U} {poultry seasoning|F}
+{1|Q} {teaspoon|U} {garlic powder|F}
+{1|Q} {teaspoon|U} {onion powder|F}
+{1|Q} {tablespoon|U} {Better Than Bouillon|TN} {roasted|PQ} {chicken base|F}
+{6|Q} {tablespoons|U} {butter|F}
+{4|Q} {tablespoons|U} {all purpose flour|F}
+{1 1/2|Q} {cups|U} {whole|PQ} {milk|F}
+{1/2|Q} {teaspoon|U} {salt|F}
+{3/4|Q} {cup|U} {heavy cream|F}
+your favorite {bread|F} {for dunking|PU}! essential.
+
+## scraped-pinchofyum-0090
+{4|Q} {medium|PQ} {sweet|T} {potatoes|F}, {washed|P} and {cut in half lengthwise|P}
+{2|Q} {tablespoons|U} {olive oil|F}
+{sprinkle|U} of {salt|F}
+{1|Q} {tablespoon|U} {olive oil|F}
+{1|Q} {onion|F}, {thinly sliced|P} (or {1|Q} {teaspoon|U} {onion powder|F})
+{1|Q} {lb.|U} {ground|P} {chicken|F}
+{1|Q} {heaping|PQ} {tablespoon|U} {taco seasoning|F} (about {half|Q} a {packet|U}, I use {Siete|TN} {mild|T})
+{1/2|Q} {cup|U} {salsa|F} (I like {Siete|TN} {casera salsa roja|F}, or {Mateo's|TN})
+{1/2|Q} {teaspoon|U} {kosher salt|F} (depends on taco seasoning, adjust {to taste|Q})
+{1/3|Q} {cup|U} {plain Greek yogurt|F}
+{1/4|Q} {cup|U} {mayo|F}
+{1/4|Q} {teaspoon|U} {chipotle powder|F}
+{1|Q} {clove|U} {garlic|F}, {grated|P}
+{1/2|Q} {teaspoon|U} {kosher salt|F} (taste and adjust)
+{2-3|Q} {tablespoons|U} {water|F}
+{Avocado|F}, {cut into chunks|P}
+{Cilantro|F}, {chopped|P}
+{Pickled|PQ} {onions|F}
+Something crunchy, like {Mexican chili crisp|F} or {crushed|P} {pistachios|F}
+
+## scraped-pinchofyum-0103
+{1|Q} {tablespoon|U} {olive oil|F}
+{1|Q} {yellow|C} {onion|F}, {sliced|P}
+{2|Q} {pounds|U} {carrots|F}, {peeled|P} and {cut into chunks|P}
+{2|Q} {tablespoons|U} {Better Than Bouillon|TN} {beef flavor base|F}
+{2|Q} {teaspoons|U} {hot|T} {madras curry powder|F} (regular {curry powder|F} works, too)
+{1|Q} {14|Q}-{ounce|U} {can|U} {coconut milk|F}
+{3 1/2|Q} {cups|U} {water|F}
+{1|Q} {tablespoon|U} {olive oil|F}
+{1|Q} {pound|U} {ground|P} {beef|F}
+{1|Q} {tablespoon|U} {tomato paste|F}
+{2|Q} {teaspoons|U} {Better Than Bouillon|TN} {beef flavor base|F}
+{1|Q} {teaspoon|U} {garam masala|F}
+{1/3|Q} {cup|U} {pine nuts|F}
+{1/4|Q} {cup|U} {finely chopped|P} {parsley|F}
+a {bit|U} of {lemon zest|F}
+{thinly sliced|P} {shallot|F} (love)
+{plain yogurt|F}
+{flatbread|F}
+
+## scraped-pinchofyum-0106
+{1|Q} {lb.|U} {chicken|F} {breasts|PA}, {sliced in half horizontally|P} ({4|Q} {large|PQ}, {flat|PQ} {pieces|U})
+{1 1/2|Q} {teaspoons|U} {salt|F} + {freshly ground|P} {pepper|F} {to taste|Q}
+{1/2|Q} {cup|U} {flour|F}
+{2|Q} {eggs|F}, {beaten|P}
+{1|Q} {cup|U} {panko breadcrumbs|F} + {1|Q} {cup|U} {traditional|PQ} {breadcrumbs|F} (see notes)
+{oil|F} {for frying|PU} (see notes for air fryer)
+{2|Q} {tablespoons|U} {oil|F}
+{2|Q} {shallots|F}, {minced|P}
+{2|Q} {tablespoons|U} {tomato paste|F}
+{1|Q} {28|Q}-{ounce|U} {can|U} {San Marzano Style|TN} {Crushed|P} {Tomatoes|F} (I use {DeLallo|TN})
+{1|Q} {teaspoon|U} {salt|F}
+{1|Q} {cup|U} {shredded|P} {mozzarella cheese|F}
+{1/2|Q} {cup|U} {freshly grated|P} {Parmesan cheese|F}
+{Garlic Bread|F}
+{Green Salad|F}
+{Kale Salad|F}
+
+## scraped-pinchofyum-0113
+{1/4|Q} {cup|U} {cottage cheese|F} ({4% milkfat|D})
+{1|Q} {large|PQ} {egg|F}
+{2|Q} {tablespoons|U} {all-purpose flour|F} (or {2 1/2|Q} {tablespoons|U} {gluten free|D} {all-purpose flour|F})
+{1/2|Q} {teaspoon|U} {baking powder|F}
+teeny tiny {bit|U} of {salt|F} (let's say {1/8|Q} {teaspoon|U})
+{1/2|Q} {tablespoon|U} {butter|F} {for frying|PU}
+{maple syrup|F} and {butter|F} {for serving|PU}
+
+## scraped-pinchofyum-0118
+{2|Q} {cups|U} {unsalted|T} {butter|F}, {room temperature|PQ}
+{3 1/2|Q} {cups|U} {brown|C} {sugar|F}, {loosely packed|PQ}
+{2|Q} {large|PQ} {eggs|F}
+{2|Q} {teaspoons|U} {vanilla extract|F}
+{3 1/4|Q} {cups|U} {all-purpose flour|F} ({470|Q} {grams|U})
+{1|Q} {cup|U} {dark|C} {cocoa powder|F} ({100|Q} {grams|U})
+{1-2|Q} {tablespoons|U} {espresso powder|F} (optional, but recommended if you're using regular cocoa powder {to give the flavor more depth|PU})
+{1 1/2|Q} {teaspoon|U} {baking soda|F}
+{1|Q} {teaspoon|U} {salt|F}
+extra {cane|F} or {granulated sugar|F} {for rolling|PU}
+{1|Q} {teaspoon|U} {ground|P} {cardamom|F} (optional)

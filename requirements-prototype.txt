@@ -1,0 +1,13 @@
+# Data collection (scripts/scrape_recipes.py)
+recipe-scrapers
+requests
+
+# Prototype: tagging, baselines, evaluation (tested with Python 3.12 and 3.13)
+spacy>=3.8,<3.9
+spacy-curated-transformers>=0.3,<0.4
+torch>=2.4
+# spacy-curated-transformers 0.3.x fails on NumPy 2.5 (float() of a 1-element array)
+numpy>=2.0,<2.4
+sklearn-crfsuite==0.5.0
+# scripts/evaluate.py (6 core types) scores with seqeval
+seqeval

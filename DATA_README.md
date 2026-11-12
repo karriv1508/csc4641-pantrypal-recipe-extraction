@@ -23,7 +23,7 @@ Seeded (4641), so re-running gives the same subset and splits. Log: data_clean_l
 ## Cleaning steps (all implemented)
 **TASTEset (gold, text left unchanged so offsets stay valid)**
 1. Parse span strings `"[(0, 1), ]"`, merge discontinuous fragments separated only by whitespace.
-2. Split each recipe into ingredient lines; tokenize with character offsets.
+2. Split each recipe into ingredient lines; tokenize with character offsets. The fraction slash (U+2044, in 650 lines) counts as "/", so "1⁄2" is one token, as `clean_line` makes it in the other sources.
 3. Character-level labels become token-level BIO tags (15 entity types).
 4. `norm_tokens` adds an ASCII form (½ -> 1/2, 1½ -> 1 1/2) without changing the original text.
 5. Recipe-level train/val/test split (3,721 / 829 / 824 lines), so lines from one recipe never appear in two splits.
@@ -43,10 +43,13 @@ Seeded (4641), so re-running gives the same subset and splits. Log: data_clean_l
 4. **Leakage guard:** drop any recipe where 80% or more of its lines match one TASTEset recipe (3 dropped), so evaluation data never shows up in silver training data.
 5. Keep raw and cleaned lines, source link, and RecipeNLG's NER food list as metadata.
 
+**Self-scraped (scripts/scrape_recipes.py)**
+1. 120 recent Pinch of Yum recipes (1,515 ingredient lines), robots.txt checked, 1.5 s between requests.
+2. schema.org ingredient lists cleaned with the same `clean_line`, saved in RecipeNLG's schema (`data_processed/scraped_clean.jsonl`).
+3. 12 recipes (151 lines, drawn with `random.Random(4641)`) were hand-labeled as the cross-site test set: `data/eval/scraped_annotations.txt` -> `scripts/build_scraped_eval.py` -> `data/eval/scraped_gold.jsonl` (and `eval/pinchofyum_gold.jsonl` for `scripts/evaluate.py`). None of the scraped recipes are used for training or tuning.
+
 ## Planned (not yet done)
-- Silver-label recipenlg_subset with a model trained on the TASTEset train split.
-- Clean self-scraped recipes (recipe-scrapers) with the same `clean_line` function and schema.
-- Hand-check about 150 scraped lines as an extra test set.
+- Silver-label recipenlg_subset with a model trained on the TASTEset train split, if the learning curve says more data helps.
 
 ## Samples (samples/) - raw and processed versions of the same records
 - tasteset_raw.csv -> tasteset_processed.jsonl
